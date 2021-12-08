@@ -19,7 +19,6 @@ Output : The sum is 55
 
 //Problem 2.Write  a Java program to print the following grid.//
 package programs;
-
 public class Exercise2
 {
 	public static void main(String[] args) {
@@ -34,7 +33,8 @@ public class Exercise2
 		}
 	}
 }
-Output  :  0 0 0 0 0 0 0 0 0 0
+Output  : 
+ 0 0 0 0 0 0 0 0 0 0
  0 0 0 0 0 0 0 0 0 0
  0 0 0 0 0 0 0 0 0 0
  0 0 0 0 0 0 0 0 0 0
@@ -47,23 +47,23 @@ Output  :  0 0 0 0 0 0 0 0 0 0
  
  //Problem 3.Write a Java program to calculate the average value of array element .//
 package programs;
-
-public class Exercise3 {
-
-	public static void main(String[] args) {
-		
-    int[] numbers = new int[] {20,30,25,35,-16,60,-100};
+public class Exercise3
+{
+public static void main(String[] args) 
+{
+ int[] numbers = new int[] {20,30,25,35,-16,60,-100};
     int sum = 0;
     for(int i=0; i < numbers.length ;i++)
     	sum = sum + numbers[i];
     double average = sum /numbers.length;
     System.out.println("Average value of the array elements is : " + average );
 	}
+	}
 
-}
 Output  : Average value of the array elements is : 7.0
 
 //Problem 4.Write a Java program to insert an element (specific position) into an array .//
+
 package programs;
 import java.util.Arrays;
 public class Exercise4 {
@@ -80,11 +80,13 @@ public class Exercise4 {
 		System.out.println("New Array: "+Arrays.toString(my_array));
 	}
 }
+
 Output :
 Original  Array :[25, 14, 56, 15, 36, 56, 77, 18, 29, 49]
 New Array: [25, 14, 5, 56, 15, 36, 56, 77, 18, 29]
 
 //Problem 5.Write a Java program to test if an array contains a specific  value .//
+
 package programs;
 import java.util.Arrays;
 public class Exercise5 {
@@ -101,11 +103,13 @@ public class Exercise5 {
 	}
 
 }
+
 Output : 
 Original Array :[25, 14, 56, 15, 36, 56, 77, 18, 29, 49]
 After removing the second element: [25, 56, 15, 36, 56, 77, 18, 29, 49, 49]
 
 //Problem 6.Write a Java program to copy an array by iterating the array .//
+
 package programs;
 import java.util.Arrays;
 public class Exercise6 {
@@ -120,11 +124,13 @@ public class Exercise6 {
 		System.out.println("New Array :"+Arrays.toString(new_array));
 	}
 }
+
 Output :
 Source Array : [25, 14, 56, 36, 56, 77, 18, 29, 49]
 New Array :[25, 14, 56, 36, 56, 77, 18, 29, 49, 0]
 
 //Problem 7.Write a Java program to reverse an array of integer values .//
+
 package programs;
 import java.util.Arrays;
 public class Exercise7 {
@@ -140,15 +146,15 @@ public class Exercise7 {
           }
           System.out.println("Reverse array  : "+Arrays.toString(my_array1));
 	}
-
 }
 Output :
+
 Original array : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 Reverse array  : [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 //Problem 8.Write a Java program to find the second largest element in an array .//
-package programs;
 
+package programs;
 import java.util.Arrays;
 public class Exercise8 {
 public static void main(String[] args) {
@@ -162,11 +168,13 @@ public static void main(String[] args) {
 	System.out.println("Second largest value : " + my_array[index]);
 	}
 }
+
 Output :
 Original numeric array : [100, 90, 88, 79, 69, 50, 48, 38, 26, 10]
 Second largest value : 90
 
 //Problem 9.Write a Java program to convert an array to Array List.//
+
 package programs;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -177,11 +185,11 @@ public static void main(String[] args)
 		ArrayList<String> list = new ArrayList<String>(Arrays.asList(my_array));
 		System.out.println(list);
 	}
-
-}
+	}
 Output : [Python, JAVA, PHP, Perl, C#, C++]
   
   //Problem 10.Write a Java program to cyclically rotate a given array clockwise by one.//
+
 package programs;
 import java.util.Arrays;
 public class Exercise10 
@@ -205,6 +213,7 @@ public class Exercise10
 		System.out.println(Arrays.toString(arra));
 	}
 }
+
 Output : 
 Original arraay: 
 [10, 20, 30, 40, 50, 60]
